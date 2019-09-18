@@ -24,6 +24,7 @@ namespace kertoma
                     n = n - 1;
                 }
                 Console.WriteLine("Vastaus: " + fact);
+                //huomio
             }
         }
     }
