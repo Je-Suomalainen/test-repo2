@@ -27,6 +27,7 @@ namespace kertoma
             {
                 //loop for defining fact
                 while(n > 0)
+
                 {
                     fact = fact * n;
                     n = n - 1;
