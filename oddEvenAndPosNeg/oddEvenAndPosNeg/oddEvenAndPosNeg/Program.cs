@@ -7,26 +7,37 @@ namespace oddEvenAndPosNeg
         static void Main(string[] args)
 
         {
-            Console.WriteLine("syötä luku");
+            Console.WriteLine("syötä luku: ");
+            string pos = "positiivinen";
+            string par = "parillinen";
             int num = int.Parse(Console.ReadLine());
-            string pos;
-            string par;
 
-            if (num %2 == 0)
             {
-                par = "parillinen";
+                if (num == 0);
             }
-            else
-            {
-                par = "pariton";
-            }
-            if (num == 0)
             {
                 pos = "nolla";
             }
+            if (num < 0)
             {
-                Console.WriteLine(par);
+                pos = "Negatiivinen";
             }
+            if (num > 0)
+            {
+                pos = "Positiivinen";
+            }
+
+            if (num % 2 == 0)
+            {
+                par = "Parillinen";
+            }
+            else
+            {
+                par = "Pariton";
+            }
+
+            Console.WriteLine($"Numero {num} on {pos} ja se on {par}");
+
         }
     }
 }
