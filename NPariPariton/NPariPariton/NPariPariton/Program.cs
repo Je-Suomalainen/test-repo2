@@ -8,10 +8,23 @@ namespace NPariPariton
         {
             Console.WriteLine("Ohjelma laskee N:n parittomien ja parillisten lukujen summan");
             Console.WriteLine("Syötä luku: ");
-            int i = 1;
-            int pariton = 0;
-            int parill = 0;
-            int userNum = 0;
-        }   
+            
+            int oddS = 0;
+            int evenS = 0;
+            int userNum = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i <= userNum; ++i)
+            {
+                if (i % 2 == 0)
+                {
+                    evenS = evenS + i;
+                }
+                else
+                {
+                    oddS = oddS + i;
+                }
+            }
+            Console.WriteLine($"Parillisten summa = {evenS}\n" + $"Parittomien summa = {oddS}");
+        }
     }
 }
