@@ -1,0 +1,1 @@
+await Client.LoginAsync(Discord.TokenType.Bot, "INSERT TOKEN HERE"); //in program.cs this is the place to put your bots token

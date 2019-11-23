@@ -26,7 +26,7 @@ namespace DiscordNet
             Client = new DiscordSocketClient();
             Handler = new CommandHandler();
 
-            await Client.LoginAsync(Discord.TokenType.Bot, "NjQ2Njc5MjU3ODE2NDk4MTg2.XdUpkQ.zo6xgiRotRdstunYMkhin4mIco8");
+            await Client.LoginAsync(Discord.TokenType.Bot, "INSERT TOKEN HERE");
 
             await Client.StartAsync();
 

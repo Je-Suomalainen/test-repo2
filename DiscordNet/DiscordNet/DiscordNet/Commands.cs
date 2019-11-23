@@ -94,6 +94,7 @@ namespace DiscordNet
             return input;
         }
         [Command("ping")]
+        
         public async Task Ping()
         {
             var msg = await ReplyAsync("***Lasketaan...***");
@@ -101,16 +102,17 @@ namespace DiscordNet
             await msg.DeleteAsync();
 
         }
-        //[Command("kick")]
-        //public async Task Kick(SocketGuildUser mention, string reason = null)
-        //{
-        //    if (mention != null)
-        //    {
-        //        await mention.KickAsync();
+        [Command("kick")]
+        [RequireUserPermission(Discord.GuildPermission.Administrator)]
+        public async Task Kick(SocketGuildUser mention, string reason = null)
+        {
+            if (mention != null)
+            {
+                await mention.KickAsync();
 
-        //        await ReplyAsync(reason == null ? $"{mention.Username} on poistettu palvelimelta ilman erityistä syytä " : $"{mention.Username} on poistettu palvelimelta. Syy: {reason}");
-        //    }
-        //}
+                await ReplyAsync(reason == null ? $"{mention.Username} on poistettu palvelimelta ilman erityistä syytä " : $"{mention.Username} on poistettu palvelimelta. Syy: {reason}");
+            }
+        }
         [Command("sää")]
         public async Task Sää()
         {
