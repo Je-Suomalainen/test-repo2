@@ -31,9 +31,9 @@ Salaatti + eväs  
 2,20
 Salaatti + eväs ja kasviskeitto
 2,60
-Maksaa sipuli-kermakastikkeessa L
+Parsakaali-juustotäytteiset kalarullat
 4,20
-Grilli:Ihanaa valkosipuli kanaa L, G
+Grilli:Ihanaa valkosipulikanaa L, G
 4,95
 
  *KESKIVIIKKO*
@@ -49,7 +49,7 @@ Salaatti + eväs  
 2,20
 Salaatti + eväs ja kasviskeitto
 2,60
-Parsakaali-juustotäytteiset kalarullat
+Maksaa sipuli-kermakastikkeessa L
 4,20
 Grilli: suljettu
 4,95
