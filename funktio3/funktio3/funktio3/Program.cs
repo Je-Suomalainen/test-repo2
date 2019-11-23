@@ -4,18 +4,20 @@ namespace funktio3
 {
     class Program
     {
+        #region "region1"
         static void Main(string[] args)
         {
-            String userInput = "";
             bool isValid = false;
             while (isValid == false)
             {
-                Console.WriteLine("Ohjelma pyytää käyttäjältä luvun väliltä 1-10 ja tarkastaa luvun kelpoisuuden \n Syötä luku: \n");
-                userInput = Console.ReadLine();
+                Console.WriteLine("Ohjelma pyytää käyttäjältä luvun väliltä 1-10 ja tarkastaa luvun kelpoisuuden \n Syötä luku:");
+                string userInput = Console.ReadLine();
                 isValid = NumberFromRange(userInput, 1, 10);
             }
 
-            #region "Solve"
+            #endregion
+
+            #region "region2"
 
             static bool NumberFromRange(string userInput, int lowerBound, int UpperBound) //<-- parametrit
             {
@@ -42,7 +44,7 @@ namespace funktio3
                 return isInRange;
 
         }
+            #endregion
+        }
     }
 }
-}
-#endregion
